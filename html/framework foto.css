@@ -1,0 +1,103 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 20px;
+}
+
+main {
+    width: 60%;
+    margin-bottom: 20px;    
+}
+/* Header Styling */
+header {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #5868ce;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Navigation Styling */
+nav {
+    margin: 20px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Main Content Styling */
+main {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 100%
+}
+
+/* Footer Styling, to co je dole */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.break-lines {
+    white-space: pre-line;
+}
+
+/* grid layout*/
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    background-color: dodgerblue;
+    padding: 10px;
+    width: fit-content;
+  }
+  
+  .grid-container > div {
+    background-color: #bd6f6f;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+  
+  .item1 {  /*main text*/
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+  .item2 {  /*img ad*/
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
