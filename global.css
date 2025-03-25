@@ -2,7 +2,7 @@
     background-color:#ffffff;
     color:#ffffff;
     background-image: linear-gradient(180deg, #386774 15%, #9cfd00bb 30%, #000000 70%);
-    font-size: 200px;
+    font-size: 20px;
     text-align:center;
     background-image: url('foto/ostatni foto/JMK.jpg');
     background-repeat: no-repeat;
@@ -17,11 +17,11 @@
     text-align: center;
     color:#000000;
     font-family: Impact, sans-serif;
-    font-size: 500px;
+    font-size: 75px;
     text-shadow: #ffffff 0px 0px 20px;
  }
- h2{
-    font-size: 75px;
+ h2 {
+    font-size: 50px;
     text-align:center;
     color:#ffffff
  }
