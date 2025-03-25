@@ -9,19 +9,76 @@
     background-attachment: fixed;
     background-size: cover;
     background-size: 100% 100%;
-    margin-left: 10%;
-
     
  }
  h1 {
-    text-align: center;
     color:#000000;
     font-family: Impact, sans-serif;
-    font-size: 75px;
+    font-size: 150px;
     text-shadow: #ffffff 0px 0px 20px;
+    padding-top: 200px;
+    padding-bottom: 350px;
  }
  h2 {
     font-size: 50px;
-    text-align:center;
-    color:#ffffff
  }
+
+
+
+
+
+
+/* Navbar Styling */
+#navbar {
+   background-color: #333;
+   text-align: center;
+   width:10%;
+   position:fixed;
+}
+
+#navbar ul {
+   list-style-type: none;
+   padding: 0;
+}
+
+#navbar li {
+   display: inline;
+   margin: 0 15px;
+}
+
+#navbar a {
+   color: white;
+   text-decoration: none;
+}
+
+/* Main Content Area */
+main {
+   padding: 20px;
+}
+
+/* Article Styling */
+article h1 {
+   color: #333;
+   font-size: 2em;
+}
+
+article p {
+   font-size: 1.2em;
+   color: #666;
+}
+
+/* Footer Styling */
+footer {
+   background-color: #333;
+   color: white;
+   text-align: center;
+   padding: 10px;
+   position: relative;
+   bottom: 0;
+   width: 100%;
+}
+
+footer a {
+   color: white;
+   text-decoration: none;
+}
