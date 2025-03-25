@@ -75,9 +75,8 @@ area {
     grid-row-start: 1;
     grid-row-end: 3;
     img {
-      width: 4032 px;
-      height: 2259 px;
-      pointer-events: auto;
+      width: 50%;
+      height: auto;
     }
   }
   .item2 {  /*img ad*/
