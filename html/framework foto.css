@@ -9,7 +9,7 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #ffffff;
+    background-color: #848484;
     color: #000000;
 }
 
@@ -38,12 +38,9 @@ nav ul li a {
 
 /* Main Content Styling */
 main {
-    background: #fff;
-    padding: 20px;
     margin-bottom: 20px;
     width: 100%
 }
-
 
 area {
     pointer-events: auto;
@@ -56,10 +53,11 @@ area {
 /* grid layout*/
 .grid-container {
     display: grid;
-    grid-template-columns: 33% 33% 33%;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
     background-color: dodgerblue;
     padding: 10px;
+    box-sizing: border-box
   }
   
   .grid-container > div {
@@ -69,25 +67,25 @@ area {
     font-size: 30px;
   }
   
-  .item1 {  /*main text*/
+  .item1 { 
     grid-column-start: 1;
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 3;
-    img {
-      width: 50%;
-      height: auto;
-    }
   }
-  .item2 {  /*img ad*/
+  .item2 {  
     grid-column-start: 1;
     grid-column-end: 4;
     grid-row-start: 3;
     grid-row-end: 4;
   }
-  .item4 {  /*img ad*/
+  .item4 { 
     grid-column-start: 2;
     grid-column-end: 4;
     grid-row-start: 4;
     grid-row-end: 6;
+
+  }
+  p.item4{
+    text-align: left;
   }
