@@ -19,9 +19,12 @@
 
     <main> <!--toto je hlavní text-->
         <div class="grid-container">
-            <div class="item1">
-
-                    <h2>název města a název místa kde jsi</h2>
+            <div class="item1 image-container" id="item1">
+                    <!--zadej místo-->
+                    <h2>název místa kde jsi</h2>
+                    <!--FOTKA MUSÍ BÝT 1500 X 843 /// MAXIMÁLNĚ PÁR PIXELŮ VEDLE aby se předešlo nesourodosti fotek-->
+                    <!--TATO FOTKA NEMŮŽE BÝT EDITOVÁNA V CSS, KVŮLI POLÍM S ODKAZY!!!!-->
+                    <!--dej sem co ta image map generation vyplivlo -->
                     
                     <img src="zamek nov3.jpg" usemap="#image-map">
 
@@ -34,30 +37,36 @@
                     </map>
             </div>
                 <div class="item2">
+                    <!--Dej sem nápovědu-->
                     <p1>NÁPOVĚDA!!! Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambl</p1>
                 </div>  
                 
                 
-            <div class="item3">
+            <div class="item3" id="item3">
+                <!--dej sem znak-->
                 <img src="Břeclav_znak.png"><br>
-                <p1>znak města</p1>
+                <p1>znak Břeclavi</p1>
             </div>  
             <div class="item4">
+                <!--dej sem info o místě-->
                 <p1>POIPIS INFO MĚSTA!!! Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p1>
             </div>
             <div class="item5">
+                <!--dej sem vlajku-->
                 <img src="Břeclav_znak.png"><br>
                 <p1>vlajka města</p1>
                 
             </div>   
-            <div class="item5">6</div>   
-            <div class="item5">7</div>      
-            <div class="item5">8</div>           
-                
         </div>
     </main>
 
-    
+    <script>
+        //toto vždy po načtení sjede k obrázku
+        document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById("item1").scrollIntoView({ behavior: "smooth" });
+        });
+
+    </script>
 </body>
 
 </html>
