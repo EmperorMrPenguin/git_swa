@@ -4,13 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Hledá se Ráček</title>
 </head>
 
 <body>
+    <div id="mySidepanel" class="sidepanel">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+    </div>    
     <nav id="navbar">
         <ul>
-            <li><a href="#home">Home</a></li>
+            <li><button class="openbtn" onclick="openNav()"><a href="#home"><i class="fa fa-bars"></i></button></a></li>
         </ul>
     </nav>
     <main>
@@ -76,4 +83,5 @@
         </article>
     </main>
 </body>
+<script src="index.js"></script>
 </html>
