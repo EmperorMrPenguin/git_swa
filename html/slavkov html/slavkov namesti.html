@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slavkov Náměstí</title>
+    <link rel="stylesheet" type="text/css" href="../framework foto.css">
+    <script src="framework.js"></script>
+</head>
+<body>
+    <nav class="navbar"> <!--toto je bar na všechny stránky-->
+        <ul>
+            <li>Home</li>
+            <li>Other1</li>
+            <li>Other2</li>
+            <li>other3</li>
+        </ul>
+    </nav>
+
+    <main> <!--toto je hlavní text-->
+        <div class="grid-container">
+            <div class="item1 image-container" id="item1">
+                    <!--zadej místo-->
+                    <h2>Paláckého náměstí, Slavkov</h2>
+                    <!--FOTKA MUSÍ BÝT 1500 X 843 /// MAXIMÁLNĚ PÁR PIXELŮ VEDLE aby se předešlo nesourodosti fotek-->
+                    <!--TATO FOTKA NEMŮŽE BÝT EDITOVÁNA V CSS, KVŮLI POLÍM S ODKAZY!!!!-->
+                    <!--dej sem co ta image map generation vyplivlo -->
+                    
+                    <img src="../../foto/slavkov foto/slavkov namesti.jpg" usemap="#image-map">
+
+                    <map name="image-map">
+                        <map name="image-map">
+                            <area target="" alt="Zámek" title="Zámek" href="slavkov zamek.html" coords="108,172,189,206,295,285,390,299,442,344,386,343,385,410,365,409,98,424,65,398,52,360,80,209,79,209,88,193" shape="poly">
+                            <area target="" alt="Vrátit se zpět" title="Vrátit se zpět" href="slavkov autobusak.html" coords="1432,842,165,758" shape="rect">
+                            <area target="" alt="Městský úřad" title="Městský úřad" href="slavkov urad.html" coords="1173,508,1229,549,1433,563,1396,109,1252,219,1209,224,1210,167,1179,142,1151,182,1161,329" shape="poly">
+                            <area target="" alt="Ukradnout auto" title="Ukradnout auto" href="slavkov cesta.html" coords="465,628,532,604,630,578,678,564,674,544,645,536,605,509,514,512,320,518,127,589,92,609,90,639,138,665,320,668,350,686,429,662" shape="poly">
+                            <area target="" alt="Ukradnout auto" title="Ukradnout auto" href="slavkov cesta.html" coords="-1,836,142,790,134,649,5,619" shape="poly">
+                            <area target="" alt="Ukradnout auto" title="Ukradnout auto" href="slavkov cesta.html" coords="1498,759,1454,771,1411,696,1426,649,1499,628" shape="poly">
+                            <area target="" alt="Ukradnout auto" title="Ukradnout auto" href="slavkov cesta.html" coords="1079,562,1083,589,1112,600,1213,591,1206,541,1176,520,1112,520,1087,541" shape="poly">
+                            <area target="" alt="Ukradnout auto" title="Ukradnout auto" href="slavkov cesta.html" coords="971,526,988,524,988,511,974,512" shape="poly">
+                            <area target="" alt="Ukradnout auto" title="Ukradnout auto" href="slavkov cesta.html" coords="254,470,328,473,384,476,373,460,328,455,280,457" shape="poly">
+                        </map>
+            </div>
+                <div class="item2">
+                    <!--Dej sem nápovědu-->
+                    <p1>NÁPOVĚDA!!! "Zajímavé náměstí. Hele, on je tady dokonce městský úřad, a dokonce i zámek. To bych mohl okuknout. Potřebuju ale taky nějaké auto..."</p1>
+                </div>  
+                
+                
+            <div class="item3" id="item3">
+                <!--dej sem znak-->
+                <img src="../../foto/slavkov foto/slavkov znak.jpg"><br>
+                <p1>znak Břeclavi</p1>
+            </div>  
+            <div class="item4">
+                <!--dej sem info o místě-->
+                <p1>Popis místa: Paláckého náměstí, pojmenované podle nikoho jiného než Františka Palackého, je historické náměstí v geografickém centru města. V dáli můžet vidět Kostel Vzkříšení Páně,
+                    napravo je městský úřad, kde sídlí i starosta Michal Boudný, a nalevo je Zámek Austerlitz. Jelikož nemáte peníze, tak si nemůžete nic koupit v obchodech za váma. Škoda no.
+                </p1>
+            </div>
+            <div class="item5">
+                <!--dej sem vlajku-->
+                <img src="../../foto/slavkov foto/slavkov vlajka.jpg" width="250"><br>
+                <p1>vlajka města</p1>
+                
+            </div>   
+        </div>
+    </main>
+
+    <script>
+        //toto vždy po načtení sjede k obrázku
+        document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById("item1").scrollIntoView({ behavior: "smooth" });
+        });
+
+    </script>
+</body>
+</html>

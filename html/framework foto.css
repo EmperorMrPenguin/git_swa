@@ -9,10 +9,8 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #ffffff;
-    color: #000000;
+    background-color: #848484;
 }
-
 
 
 /* Navigation Styling */
@@ -38,17 +36,15 @@ nav ul li a {
 
 /* Main Content Styling */
 main {
-    background: #fff;
-    padding: 20px;
     margin-bottom: 20px;
     width: 100%
 }
-
 
 area {
     pointer-events: auto;
 }
 
+/* automaticky zalamuje text*/
 .break-lines {
     white-space: pre-line;
 }
@@ -56,39 +52,75 @@ area {
 /* grid layout*/
 .grid-container {
     display: grid;
-    grid-template-columns: 33% 33% 33%;
-    gap: 10px;
-    background-color: dodgerblue;
-    padding: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0px; /*modré čáry mezi jednotlivými divy*/
+    background-color: #d6d6d6;
+    padding: 0px; /*modré čáry postranách*/
+    box-sizing: border-box;
   }
   
+  /*barva hran a text*/
   .grid-container > div {
-    background-color: #bd6f6f;
+    background-color: #ffffff;
     text-align: center;
-    padding: 20px 0;
     font-size: 30px;
+    border: 10px solid #b8b6b671;
+    border-radius: 25px;
   }
   
-  .item1 {  /*main text*/
+  /*hlavni obrazek*/
+  .item1 { 
     grid-column-start: 1;
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 3;
-    img {
-      width: 4032 px;
-      height: 2259 px;
-      pointer-events: auto;
-    }
   }
-  .item2 {  /*img ad*/
+
+  .item1 img {
+    border-radius: 20px;
+    border: 2px solid #00000071;
+    filter: drop-shadow(0px 0px 15px #00000080);
+  }
+  /*napoveda*/
+  .item2 {  
     grid-column-start: 1;
     grid-column-end: 4;
     grid-row-start: 3;
     grid-row-end: 4;
+    padding: 50px;
   }
-  .item4 {  /*img ad*/
+  /*popis/info města*/
+  .item4 { 
     grid-column-start: 2;
     grid-column-end: 4;
     grid-row-start: 4;
     grid-row-end: 6;
+    text-align: left !important;
+    padding: 15px;
   }
+  /*znak*/
+  .item3{
+    line-height: 0.8;
+    padding-bottom: 8px;
+  }
+  /*vlajka*/
+  .item5{
+    line-height: 0.8;
+    padding-bottom: 8px;
+  }
+
+/*napověda aby byla schovana*/
+.banner {
+  position: absolute;
+  top: 0px; /* Distance from the top */
+  left: 50%;
+  transform: translateX(-50%); /* Centers the banner horizontally */
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  color: white;
+  padding: 10px 20px;
+  font-size: 20px;
+  border-radius: 5px;
+  z-index: 2; /* Ensure banner is over text */
+  transition: opacity 0.3s ease;
+  width: 100%;
+}
