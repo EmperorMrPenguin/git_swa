@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>obrazek</title>
+    <link rel="stylesheet" type="text/css" href="framework foto.css">
+    <script src="framework.js"></script>
+</head>
+<body>
+    <nav class="navbar"> <!--toto je bar na všechny stránky-->
+        <ul>
+            <li>Home</li>
+            <li>Other1</li>
+            <li>Other2</li>
+            <li>other3</li>
+        </ul>
+    </nav>
+
+    <main> <!--toto je hlavní text-->
+        <div class="grid-container">
+            <div class="item1 image-container" id="item1">
+                    <!--zadej místo-->
+                    <h2>Zelný trh</h2>
+                    <!--FOTKA MUSÍ BÝT 1500 X 843 /// MAXIMÁLNĚ PÁR PIXELŮ VEDLE aby se předešlo nesourodosti fotek-->
+                    <!--TATO FOTKA NEMŮŽE BÝT EDITOVÁNA V CSS, KVŮLI POLÍM S ODKAZY!!!!-->
+                    <!--dej sem co ta image map generation vyplivlo -->
+                    
+                    <img src="zelny trh.png" usemap="#image-map">
+
+                    <map name="image-map">
+                        <area target="" alt="" title="" href="Petrov.html" coords="847,415,846,368,818,368,817,416" shape="poly">
+                        <area target="" alt="" title="" href="" coords="182,467,234,464,227,345,168,343" shape="poly">
+                        <area target="" alt="" title="" href="" coords="181,472,-1,480,1,270,1,190,13,191,173,294,165,311" shape="poly">
+                        <area target="" alt="" title="ukradni auto" href="" coords="1248,418,1240,398,1200,400,1201,416" shape="poly">
+                    </map>
+            </div>
+                <div class="item2">
+                    <!--Dej sem nápovědu-->
+                    <p1>NÁPOVĚDA!!! Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambl</p1>
+                </div>  
+                
+                
+            <div class="item3" id="item3">
+                <!--dej sem znak-->
+                <img src="znak brna.png"><br>
+                <p1>znak Brna</p1>
+            </div>  
+            <div class="item4">
+                <!--dej sem info o místě-->
+                <p1>POIPIS MÍSTA!!! Zelný trh (německy Krautmarkt, v hovorovém jazyce často nazýván Zelňák či Zelný rynk, příp. i Zelné rynek) je náměstí v Brně v historickém centru města. Náměstí leží ve svahu těsně pod Petrovem, asi 400 metrů jižně od centrálního náměstí Svobody, a má přibližně obdélníkový tvar. Většina plochy je po část roku využita jako tržiště, kde se prodává ovoce, zelenina, květiny aj</p1>
+            </div>
+            <div class="item5">
+                <!--dej sem vlajku-->
+                <img src="vlajka brna.png"><br>
+                <p1>vlajka města</p1>
+                
+            </div>   
+        </div>
+    </main>
+
+    <script>
+        //toto vždy po načtení sjede k obrázku
+        document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById("item1").scrollIntoView({ behavior: "smooth" });
+        });
+
+    </script>
+</body>
+
+</html>

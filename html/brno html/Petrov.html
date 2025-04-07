@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>obrazek</title>
+    <link rel="stylesheet" type="text/css" href="framework foto.css">
+    <script src="framework.js"></script>
+</head>
+<body>
+    <nav class="navbar"> <!--toto je bar na všechny stránky-->
+        <ul>
+            <li>Home</li>
+            <li>Other1</li>
+            <li>Other2</li>
+            <li>other3</li>
+        </ul>
+    </nav>
+
+    <main> <!--toto je hlavní text-->
+        <div class="grid-container">
+            <div class="item1 image-container" id="item1">
+                    <!--zadej místo-->
+                    <h2>Petrov</h2>
+                    <!--FOTKA MUSÍ BÝT 1500 X 843 /// MAXIMÁLNĚ PÁR PIXELŮ VEDLE aby se předešlo nesourodosti fotek-->
+                    <!--TATO FOTKA NEMŮŽE BÝT EDITOVÁNA V CSS, KVŮLI POLÍM S ODKAZY!!!!-->
+                    <!--dej sem co ta image map generation vyplivlo -->
+                    
+                    <img src="petrov.png" usemap="#image-map">
+
+                    <map name="image-map">
+                        <area target="" alt="" title="" href="" coords="413,695,390,693,396,664,404,635,408,619,414,606,424,616,424,640" shape="poly">
+                        <area target="" alt="" title="" href="" coords="856,753,774,811,650,791,654,726,680,695,737,677,796,683,836,709,847,718" shape="poly">
+                        <area target="" alt="" title="" href="" coords="672,696,650,725,641,763,620,773,592,787,514,783,509,748,519,717,547,688,611,675,650,677" shape="poly">
+                        <area target="" alt="" title="" href="" coords="1071,840,882,830,877,736,893,688,924,667,1030,679,1063,730,1083,789" shape="poly">
+                        <area target="" alt="" title="" href="" coords="1194,809,1247,842,1500,842,1499,718,1372,689,1209,691,1189,721,1181,757" shape="poly">
+                        <area target="" alt="" title="" href="" coords="1068,716,1170,726,1133,660,1073,653" shape="poly">
+                        <area target="" alt="" title="" href="" coords="1446,700,1430,667,1404,668,1415,695" shape="poly">
+                    </map>
+            </div>
+                <div class="item2">
+                    <!--Dej sem nápovědu-->
+                    <p1>NÁPOVĚDA!!! Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambl</p1>
+                </div>  
+                
+                
+            <div class="item3" id="item3">
+                <!--dej sem znak-->
+                <img src="znak brna.png"><br>
+                <p1>znak Brna</p1>
+            </div>  
+            <div class="item4">
+                <!--dej sem info o místě-->
+                <p1>POIPIS MÍSTA!!! Petrov je kamenný ostroh v Brně-střed, na kterém stojí katedrála sv. Petra a Pavla a sídlo brněnského biskupství. Katedrála je jednou z nejstarších v Brně, s kořeny v 12. století, a je národní kulturní památkou. V okolí se nachází Denisovy sady, park Studánka a Kapucínské zahrady, s mnoha zajímavostmi, včetně kolonády a bastionu s obeliskem. Silueta katedrály je vyobrazena na české desetikorunové minci.</p1>
+            </div>
+            <div class="item5">
+                <!--dej sem vlajku-->
+                <img src="vlajka brna.png"><br>
+                <p1>vlajka města</p1>
+                
+            </div>   
+        </div>
+    </main>
+
+    <script>
+        //toto vždy po načtení sjede k obrázku
+        document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById("item1").scrollIntoView({ behavior: "smooth" });
+        });
+
+    </script>
+</body>
+
+</html>
