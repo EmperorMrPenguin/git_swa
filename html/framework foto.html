@@ -38,6 +38,7 @@
             </div>
                 <div class="item2">
                     <!--Dej sem nápovědu-->
+                    <div class="banner" id="banner">This is a Banner</div>
                     <p1>NÁPOVĚDA!!! Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambl</p1>
                 </div>  
                 
@@ -66,6 +67,16 @@
             document.getElementById("item1").scrollIntoView({ behavior: "smooth" });
         });
 
+        //nápověda aby byla skrytá
+        const image = document.getElementById('banner');
+
+        image.addEventListener('mouseenter', () => {
+            image.style.opacity = 0; // Hide the image when cursor enters
+        });
+
+        image.addEventListener('mouseleave', () => {
+            image.style.opacity = 1; // Show the image when cursor leaves
+        });
     </script>
 </body>
 

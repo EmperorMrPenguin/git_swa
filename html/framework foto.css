@@ -109,4 +109,18 @@ area {
     padding-bottom: 8px;
   }
 
-
+/*napověda aby byla schovana*/
+.banner {
+  position: absolute;
+  top: 0px; /* Distance from the top */
+  left: 50%;
+  transform: translateX(-50%); /* Centers the banner horizontally */
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  color: white;
+  padding: 10px 20px;
+  font-size: 20px;
+  border-radius: 5px;
+  z-index: 2; /* Ensure banner is over text */
+  transition: opacity 0.3s ease;
+  width: 100%;
+}
