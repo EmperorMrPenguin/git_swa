@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banner Over Text with Hover Effect</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .container {
+            position: relative;
+            display: inline-block;
+        }
+
+        .text {
+            font-size: 24px;
+            color: #333;
+            padding: 30px; /* Ensure space around text */
+            position: relative;
+            z-index: 1;
+        }
+
+        .banner {
+            position: absolute;
+            top: 0px; /* Distance from the top */
+            left: 50%;
+            transform: translateX(-50%); /* Centers the banner horizontally */
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+            color: white;
+            padding: 10px 20px;
+            font-size: 20px;
+            border-radius: 5px;
+            z-index: 2; /* Ensure banner is over text */
+            transition: opacity 0.3s ease;
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="banner" id="banner">This is a Banner</div>
+        <p class="text">This is some text below the banner and above the image.</p>
+    </div>
+
+    <script>
+        // Select the image and add event listeners for mouseenter and mouseleave
+        const image = document.getElementById('banner');
+
+        image.addEventListener('mouseenter', () => {
+            image.style.opacity = 0; // Hide the image when cursor enters
+        });
+
+        image.addEventListener('mouseleave', () => {
+            image.style.opacity = 1; // Show the image when cursor leaves
+        });
+    </script>
+
+</body>
+</html>
