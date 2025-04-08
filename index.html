@@ -9,19 +9,24 @@
 </head>
 
 <body>
-    <div id="mySidepanel" class="sidepanel">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Clients</a>
-    </div>    
-    <nav id="navbar">
+    <nav>
         <ul>
-            <li><button class="openbtn" onclick="openNav()"><a href="#home"><i class="fa fa-bars"></i></button></a></li>
-        </ul>
+            <div class="navbar-logo"><a href="index.html"><img src="foto/uvod foto/logo.jpg" width="65"></a></div>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Ostatní  <i class="fa fa-angle-down"></i></a>
+                <div class="dropdown-content">
+                  <a href="#">Galerie</a>
+                  <a href="#">Mapa měst</a>
+                  <a href="#">Fotky lišek</a>
+                </div>
+            <li><a href="#news">O nás  <i class="fa fa-question"></i></a></li>    
+            <li><a href="#home">Info  <i class="fa fa-info"></i></a></li>
+            </li>
+          </ul>
     </nav>
     <main>
         <h1>Hledá se Ráček!</h1>
+        <button class="button">Začít hru</button>
         <h2>Co se děje?!</h2>
         <article>
             Test Test Test Test Test Test Test Test Test Test Test Test <br>

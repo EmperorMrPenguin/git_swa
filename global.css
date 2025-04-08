@@ -1,4 +1,5 @@
  body {
+    font-family:Arial, Helvetica, sans-serif;
     background-color:#ffffff;
     color:#ffffff;
     background-image: linear-gradient(180deg, #386774 15%, #9cfd00bb 30%, #000000 70%);
@@ -23,73 +24,80 @@
     font-size: 50px;
  }
 
+ /*čudlík na začnutí hry*/
+ .button {
+   background-color: #ffffff; /* Green */
+   border: none;
+   color: white;
+   padding: 15px 32px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 16px;
+ }
+
+ .button:hover {
+   background-color: #04AA6D; /* Green */
+   color: white;
+ }
 
 /* Navbar Styling */
-#navbar {
-   background-color: #333;
-   text-align: center;
-   width:0%;
-   position:fixed;
-}
-
-#navbar ul {
+ ul {
    list-style-type: none;
+   margin: 0;
    padding: 0;
-}
+   overflow: hidden;
+   background-color: #38444d;
+   font-size: 40px;
+ }
 
-#navbar li {
-   display: inline;
-   margin: 0 15px;
-}
-
-#navbar a {
-   color: white;
-   text-decoration: none;
-}
-/*Popup sidebar věcička */
-.sidepanel  {
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  height: 250px;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-}
-
-.sidepanel a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
-
-.sidepanel a:hover {
-  color: #f1f1f1;
-}
-
-.sidepanel .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-}
-.openbtn {
-   font-size: 20px;
-   cursor: pointer;
-   background-color: #111;
-   color: white;
-   padding: 10px 15px;
-   border: none;
+ .navbar-logo {
+   float: left;
+   padding-left: 50px;
  }
  
- .openbtn:hover {
-   background-color:#444;
+ li {
+   float: right;
+   padding-inline: 75px;;
+ }
+ 
+ li a, .dropbtn {
+   display: inline-block;
+   color: white;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+ }
+ 
+ li a:hover, .dropdown:hover .dropbtn {
+   background-color: red;
+ }
+ 
+ li.dropdown {
+   display: inline-block;
+ }
+ 
+ .dropdown-content {
+   display: none;
+   position: absolute;
+   background-color: #f9f9f9;
+   min-width: 160px;
+   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+   z-index: 1;
+ }
+ 
+ .dropdown-content a {
+   color: black;
+   padding: 12px 16px;
+   text-decoration: none;
+   display: block;
+   text-align: left;
+ }
+ 
+ .dropdown-content a:hover {background-color: #f1f1f1;}
+ 
+ .dropdown:hover .dropdown-content {
+   display: block;
  }
 
 /* Main Content Area */

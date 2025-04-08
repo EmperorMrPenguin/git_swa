@@ -3,107 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>špatná verze</title>
-    <style>
-     .pomocny {
-        visibility: hidden;
-        line-height: 100px;
-     }
-     body {
-        background-color:#ffffff;
-        color:#ffffff;
-        background-image: linear-gradient(180deg, #386774 15%, #9cfd00bb 30%, #000000 70%);
-        font-size: 15px;
-        text-align:center;
-        
-     }
-     h1 {
-        text-align: center;
-        color:#000000;
-        font-family: Impact, sans-serif;
-        font-size: 100px;
-        text-shadow: #ffffff 0px 0px 20px;
-        background-image: url('foto/ostatni foto/JMK.jpg');
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-        background-size: 100% 100%;
-
-     }
-     h2{
-        font-size: 75px;
-        text-align:center;
-        color:#ffffff
-     }
-    </style>
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Hledá se Ráček</title>
 </head>
+
 <body>
-<h1> 
- <div class="pomocny">.</div>
- <div class="pomocny">.</div>
- <div class="pomocny">.</div>
- <div class="pomocny">.</div>     
- Hledá se Ráček!<br><div class="pomocny">.</div>
-   <div class="pomocny">.</div> 
-   <div class="pomocny">.</div>
-   <div class="pomocny">.</div>
-   <div class="pomocny">.</div>
-  </h1>
- <h2>Co se děje?!</h2>
- Test Test Test Test Test Test Test Test Test Test Test Test <br>
- Test Test Test Test Test Test Test Test Test Test Test Test <br>
- Test Test Test Test Test Test Test Test Test Test Test Test <br>
- Test Test Test Test Test Test Test Test Test Test Test Test <br>
- Test Test Test Test Test Test Test Test Test Test Test Test <br>
- Test Test Test Test Test Test Test Test Test Test Test Test <br>
- Test Test Test Test Test Test Test Test Test Test Test Test <br>
- Test Test Test Test Test Test Test Test Test Test Test Test <br>
- Test Test Test Test Test Test Test Test Test Test Test Test <br>
- Test Test Test Test Test Test Test Test Test Test Test Test <br>
- Test Test Test Test Test Test Test Test Test Test Test Test <br>
- Test Test Test Test Test Test Test Test Test Test Test Test <br>
- Test Test Test Test Test Test Test Test Test Test Test Test <br>
- Test Test Test Test Test Test Test Test Test Test Test Test <br>
- Test Test Test Test Test Test Test Test Test Test Test Test <br>
- Test Test Test Test Test Test Test Test Test Test Test Test <br>
- Test Test Test Test Test Test Test Test Test Test Test Test <br>
- Test Test Test Test Test Test Test Test Test Test Test Test <br>
- Test Test Test Test Test Test Test Test Test Test Test Test <br>
- Test Test Test Test Test Test Test Test Test Test Test Test <br>
- Test Test Test Test Test Test Test Test Test Test Test Test <br>
- Test Test Test Test Test Test Test Test Test Test Test Test <br>
- Test Test Test Test Test Test Test Test Test Test Test Test <br>
- Test Test Test Test Test Test Test Test Test Test Test Test <br>
- Test Test Test Test Test Test Test Test Test Test Test Test <br>
- Test Test Test Test Test Test Test Test Test Test Test Test <br>
- Test Test Test Test Test Test Test Test Test Test Test Test <br>
- Test Test Test Test Test Test Test Test Test Test Test Test <br>
- Test Test Test Test Test Test Test Test Test Test Test Test <br>
- Test Test Test Test Test Test Test Test Test Test Test Test <br>
- Test Test Test Test Test Test Test Test Test Test Test Test <br>
- Test Test Test Test Test Test Test Test Test Test Test Test <br>
- Test Test Test Test Test Test Test Test Test Test Test Test <br>
- Test Test Test Test Test Test Test Test Test Test Test Test <br>
- Test Test Test Test Test Test Test Test Test Test Test Test <br>
- Test Test Test Test Test Test Test Test Test Test Test Test <br>
- Test Test Test Test Test Test Test Test Test Test Test Test <br>
- Test Test Test Test Test Test Test Test Test Test Test Test <br>
- Test Test Test Test Test Test Test Test Test Test Test Test <br>
- Test Test Test Test Test Test Test Test Test Test Test Test <br>
- Test Test Test Test Test Test Test Test Test Test Test Test <br>
- Test Test Test Test Test Test Test Test Test Test Test Test <br>
- Test Test Test Test Test Test Test Test Test Test Test Test <br>
- Test Test Test Test Test Test Test Test Test Test Test Test <br>
- Test Test Test Test Test Test Test Test Test Test Test Test <br>
- Test Test Test Test Test Test Test Test Test Test Test Test <br>
- Test Test Test Test Test Test Test Test Test Test Test Test <br>
- Test Test Test Test Test Test Test Test Test Test Test Test <br>
- Test Test Test Test Test Test Test Test Test Test Test Test <br>
- Test Test Test Test Test Test Test Test Test Test Test Test <br>
- Test Test Test Test Test Test Test Test Test Test Test Test <br>
- Test Test Test Test Test Test Test Test Test Test Test Test <br>
- Test Test Test Test Test Test Test Test Test Test Test Test <br>
- Test Test Test Test Test Test Test Test Test Test Test Test <br>
- Test Test Test Test Test Test Test Test Test Test Test Test <br>
- Test Test Test Test Test Test Test Test Test Test Test Test <br>
+    <div id="mySidepanel" class="sidepanel">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+    </div>    
+    <nav id="navbar">
+        <ul>
+            <li><button class="openbtn" onclick="openNav()"><a href="#home"><i class="fa fa-bars"></i></button></a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Hledá se Ráček!</h1>
+        <h2>Co se děje?!</h2>
+        <article>
+            Test Test Test Test Test Test Test Test Test Test Test Test <br>
+            Test Test Test Test Test Test Test Test Test Test Test Test <br>
+            Test Test Test Test Test Test Test Test Test Test Test Test <br>
+            Test Test Test Test Test Test Test Test Test Test Test Test <br>
+            Test Test Test Test Test Test Test Test Test Test Test Test <br>
+            Test Test Test Test Test Test Test Test Test Test Test Test <br>
+            Test Test Test Test Test Test Test Test Test Test Test Test <br>
+            Test Test Test Test Test Test Test Test Test Test Test Test <br>
+            Test Test Test Test Test Test Test Test Test Test Test Test <br>
+            Test Test Test Test Test Test Test Test Test Test Test Test <br>
+            Test Test Test Test Test Test Test Test Test Test Test Test <br>
+            Test Test Test Test Test Test Test Test Test Test Test Test <br>
+            Test Test Test Test Test Test Test Test Test Test Test Test <br>
+            Test Test Test Test Test Test Test Test Test Test Test Test <br>
+            Test Test Test Test Test Test Test Test Test Test Test Test <br>
+            Test Test Test Test Test Test Test Test Test Test Test Test <br>
+            Test Test Test Test Test Test Test Test Test Test Test Test <br>
+            Test Test Test Test Test Test Test Test Test Test Test Test <br>
+            Test Test Test Test Test Test Test Test Test Test Test Test <br>
+            Test Test Test Test Test Test Test Test Test Test Test Test <br>
+            Test Test Test Test Test Test Test Test Test Test Test Test <br>
+            Test Test Test Test Test Test Test Test Test Test Test Test <br>
+            Test Test Test Test Test Test Test Test Test Test Test Test <br>
+            Test Test Test Test Test Test Test Test Test Test Test Test <br>
+            Test Test Test Test Test Test Test Test Test Test Test Test <br>
+            Test Test Test Test Test Test Test Test Test Test Test Test <br>
+            Test Test Test Test Test Test Test Test Test Test Test Test <br>
+            Test Test Test Test Test Test Test Test Test Test Test Test <br>
+            Test Test Test Test Test Test Test Test Test Test Test Test <br>
+            Test Test Test Test Test Test Test Test Test Test Test Test <br>
+            Test Test Test Test Test Test Test Test Test Test Test Test <br>
+            Test Test Test Test Test Test Test Test Test Test Test Test <br>
+            Test Test Test Test Test Test Test Test Test Test Test Test <br>
+            Test Test Test Test Test Test Test Test Test Test Test Test <br>
+            Test Test Test Test Test Test Test Test Test Test Test Test <br>
+            Test Test Test Test Test Test Test Test Test Test Test Test <br>
+            Test Test Test Test Test Test Test Test Test Test Test Test <br>
+            Test Test Test Test Test Test Test Test Test Test Test Test <br>
+            Test Test Test Test Test Test Test Test Test Test Test Test <br>
+            Test Test Test Test Test Test Test Test Test Test Test Test <br>
+            Test Test Test Test Test Test Test Test Test Test Test Test <br>
+            Test Test Test Test Test Test Test Test Test Test Test Test <br>
+            Test Test Test Test Test Test Test Test Test Test Test Test <br>
+            Test Test Test Test Test Test Test Test Test Test Test Test <br>
+            Test Test Test Test Test Test Test Test Test Test Test Test <br>
+            Test Test Test Test Test Test Test Test Test Test Test Test <br>
+            Test Test Test Test Test Test Test Test Test Test Test Test <br>
+            Test Test Test Test Test Test Test Test Test Test Test Test <br>
+            Test Test Test Test Test Test Test Test Test Test Test Test <br>
+            Test Test Test Test Test Test Test Test Test Test Test Test <br>
+            Test Test Test Test Test Test Test Test Test Test Test Test <br>
+            Test Test Test Test Test Test Test Test Test Test Test Test <br>
+            Test Test Test Test Test Test Test Test Test Test Test Test <br>
+            Test Test Test Test Test Test Test Test Test Test Test Test <br>
+            Test Test Test Test Test Test Test Test Test Test Test Test <br>
+            Test Test Test Test Test Test Test Test Test Test Test Test <br>
+        </article>
+    </main>
+</body>
+<script src="index.js"></script>
 </html>
