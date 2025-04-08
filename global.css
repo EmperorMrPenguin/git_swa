@@ -17,8 +17,8 @@
     font-family: Impact, sans-serif;
     font-size: 150px;
     text-shadow: #ffffff 0px 0px 20px;
-    padding-top: 200px;
-    padding-bottom: 350px;
+    padding-top: 150px;
+    padding-bottom: 100px;
  }
  h2 {
     font-size: 50px;
@@ -26,19 +26,26 @@
 
  /*čudlík na začnutí hry*/
  .button {
-   background-color: #ffffff; /* Green */
-   border: none;
-   color: white;
-   padding: 15px 32px;
+   background-color: #04AA6D;
+   border-color: #04AA6D;
+   color: #ffffff;
+   padding: 32px 350px;
    text-align: center;
    text-decoration: none;
    display: inline-block;
-   font-size: 16px;
+   font-size: 35px;
+   margin-bottom: 150px;
+   border-radius: 50px;
+   transition-duration: 0.4s;
  }
 
  .button:hover {
-   background-color: #04AA6D; /* Green */
+   background-color: #04AA6D;
+   border-color:#ffffff;
    color: white;
+   cursor:inherit ;
+   box-shadow: #04AA6D 0px 0px 50px;
+   text-shadow:#ffffff 0px 0px 50px;
  }
 
 /* Navbar Styling */
@@ -98,6 +105,10 @@
  
  .dropdown:hover .dropdown-content {
    display: block;
+ }
+
+ svg {
+  width: 30px;
  }
 
 /* Main Content Area */
