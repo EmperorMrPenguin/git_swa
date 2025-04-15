@@ -12,6 +12,7 @@
     background-size: 100% 100%;
     
  }
+
  h1 {
     color:#000000;
     font-family: Impact, sans-serif;
@@ -37,6 +38,9 @@
    margin-bottom: 150px;
    border-radius: 50px;
    transition-duration: 0.4s;
+   -webkit-flex: 10;
+   -ms-flex: 10;
+   flex: 10;
  }
 
  .button:hover {
@@ -49,6 +53,12 @@
  }
 
 /* Navbar Styling */
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1
+}
+ 
  ul {
    list-style-type: none;
    margin: 0;
@@ -117,14 +127,15 @@ main {
 }
 
 /* Article Styling */
+article {
+  text-shadow: #000000 0px 0px 10px;
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+}  
 article h1 {
    color: #333;
    font-size: 2em;
-}
-
-article p {
-   font-size: 1.2em;
-   color: #666;
 }
 
 /* Footer Styling */
@@ -141,4 +152,12 @@ footer {
 footer a {
    color: white;
    text-decoration: none;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
 }
