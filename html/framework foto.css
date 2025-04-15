@@ -130,6 +130,7 @@ area {
   /*žárovička*/
   .item2 svg{
     width: 50px;
+    padding-top: 50px;
   }
   
   /*popis/info města*/
@@ -161,7 +162,6 @@ area {
   background-color: #999999; /* Semi-transparent background */
   color: white;
   padding: 10px 20px;
-  font-size: 20px;
   border-radius: 5px;
   z-index: 2; /* Ensure banner is over text */
   transition: opacity 0.3s ease;
