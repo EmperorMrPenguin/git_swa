@@ -1,3 +1,10 @@
+ html {
+  scroll-behavior: smooth;
+ }
+ /*pro scrolování po kliku na navbaru*/
+ .guide{
+    margin:50px;
+ }
  body {
     font-family:Arial, Helvetica, sans-serif;
     background-color:#ffffff;
@@ -5,7 +12,7 @@
     font-size: 20px;
     text-align:center;;
     background-image:
-    linear-gradient(to bottom, rgba(255, 255, 255, 0) 10%, rgba(0, 0, 0, 1) 30%),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0) 10%, rgba(0, 0, 0, 1) 25%),
     url(foto/uvod\ foto/JMK.jpg);
     background-repeat: no-repeat;
     background-attachment:scroll;
@@ -18,21 +25,22 @@
     font-family: Impact, sans-serif;
     font-size: 150px;
     text-shadow: #ffffff 0px 0px 20px;
-    padding-top: 150px;
+    padding-top: 100px;
     padding-bottom: 100px;
  }
  h2 {
+    padding-top: 10px;
     font-size: 50px;
  }
 
  /*čudlík na začnutí hry*/
  .button {
-   background-color: #2ea834;
-   border-color: #2ea834;
+   background-color: #83ffbb;
+   border-color: #83ffbb;
    color: #ffffff;
+   text-shadow: #000000 0px 0px 5px;
    padding: 32px 350px;
    text-align: center;
-   text-decoration: none;
    display: inline-block;
    font-size: 35px;
    margin-bottom: 150px;
@@ -44,19 +52,20 @@
  }
 
  .button:hover {
-   background-color: #2ea834;
+   background-color: #83ffbb;
    border-color:#ffffff;
    color: white;
    cursor:inherit ;
-   box-shadow: #2ea834 0px 0px 50px;
-   text-shadow:#ffffff 0px 0px 50px;
+   box-shadow: #83ffbb 0px 0px 50px;
+   text-shadow:#fff 0px 0px 0px;
  }
 
 /* Navbar Styling */
 nav {
   -webkit-flex: 1;
   -ms-flex: 1;
-  flex: 1
+  flex: 1;
+  margin-top:10px;
 }
  
  ul {
@@ -64,14 +73,15 @@ nav {
    margin: 0;
    padding: 0;
    overflow: hidden;
-   font-size: 40px;
+   font-size: 35px;
  }
 
  .navbar-logo {
    float: left;
    padding-left: 50px;
- }
- 
+   padding-top:10px;
+  }
+
  li {
    float: right;
    padding-inline: 75px;;
@@ -84,10 +94,20 @@ nav {
    padding: 14px 16px;
    text-decoration: none;
  }
- 
- li a:hover, .dropdown:hover .dropbtn {
-   background-color: red;
+ li.o_nas:hover a{
+  color: #83ffbb;
  }
+
+ li:hover svg {
+  fill: #83ffbb;
+ }
+
+ li a:hover, .dropdown:hover .dropbtn {
+   color:#83ffbb;
+ }
+  li:hover a svg, .dropdown:hover .dropbtn svg {
+  fill: #83ffbb;
+}
  
  li.dropdown {
    display: inline-block;
@@ -96,21 +116,18 @@ nav {
  .dropdown-content {
    display: none;
    position: absolute;
-   background-color: #f9f9f9;
    min-width: 160px;
    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
    z-index: 1;
  }
  
  .dropdown-content a {
-   color: black;
+   color: #ffffff;
    padding: 12px 16px;
    text-decoration: none;
    display: block;
    text-align: left;
  }
- 
- .dropdown-content a:hover {background-color: #f1f1f1;}
  
  .dropdown:hover .dropdown-content {
    display: block;
@@ -119,6 +136,17 @@ nav {
  svg {
   width: 30px;
   fill:#fff;
+ }
+ svg:hover {
+  fill:#83ffbb;
+ }
+
+ .svg{
+  width:40px;
+  filter: brightness(0) invert(1);
+ }
+ .svg:hover{
+  filter: brightness(0) saturate(100%) invert(73%) sepia(33%) saturate(577%) hue-rotate(94deg) brightness(104%) contrast(95%);
  }
 
 /* Main Content Area */
