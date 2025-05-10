@@ -84,6 +84,9 @@ nav {
  
  .dropdown:hover .dropdown-content {
    display: block;
+   background-color: #357a28;
+   border-bottom-left-radius: 25px;
+   border-bottom-right-radius: 25px;
  }
 
  svg {
@@ -176,11 +179,13 @@ area {
   /*znak*/
   .item3{
     line-height: 0.8;
+    padding-top: 8px;
     padding-bottom: 8px;
   }
   /*vlajka*/
   .item5{
     line-height: 0.8;
+    padding-top: 8px;
     padding-bottom: 8px;
   }
 
