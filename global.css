@@ -66,6 +66,7 @@ nav {
   -ms-flex: 1;
   flex: 1;
   margin-top:10px;
+  position: relative;
 }
  
  ul {
@@ -172,7 +173,7 @@ article.left h2 {
 }
 
 article.left {
-  text-align: left;
+  text-align:justify;
   margin-top:300px;
   margin-bottom:500px;
 }
@@ -184,10 +185,10 @@ article.right h2 {
 
 article.right img {
   float: left;
-  padding-left:150px;
+  padding-left:550px;
 }
 article.right {
- text-align: right;
+ text-align: justify;
  margin-top:300px;
  margin-bottom:500px;
 }
