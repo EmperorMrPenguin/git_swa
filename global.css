@@ -2,8 +2,8 @@
   scroll-behavior: smooth;
  }
  /*pro scrolování po kliku na navbaru*/
- .guide{
-    margin:50px;
+ .guide{  /*zbytečné, bylo to na hovno*/
+    margin:0px;
  }
  body {
     font-family:Arial, Helvetica, sans-serif;
@@ -40,7 +40,7 @@
 
  /*čudlík na začnutí hry*/
  .button {
-   background-color: #83ffbb;
+   background-color: #357a28;
    border-color: rgb(133, 255, 188);
    color: #ffffff;
    text-shadow: #000000 0px 0px 5px;
@@ -54,7 +54,7 @@
  }
 
  .button:hover {
-   background-color: #83ffbb;
+   background-color: #357a28;
    border-color:#ffffff;
    color: white;
    cursor:inherit ;
@@ -171,6 +171,8 @@ article {
   -webkit-flex: 3;
   -ms-flex: 3;
   flex: 3;
+  border: 10px solid #357a28;
+  border-radius: 25px;
 }  
 
 article.left h2 {
@@ -186,7 +188,7 @@ article.left img {
 
 article.left {
   text-align:justify;
-  margin-top:300px;
+  margin-top:50px;    /*upravuje vertikální délku od talčítka začít hru*/
   padding-left:100px;
 }
 
