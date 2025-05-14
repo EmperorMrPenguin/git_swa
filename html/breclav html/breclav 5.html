@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>obrazek</title>
+    <link rel="stylesheet" type="text/css" href="../framework foto.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="framework.js"></script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <div class="navbar-logo"><a href="../../index.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M575.8 255.5c0 18-15 32.1-32 32.1l-32 0 .7 160.2c0 2.7-.2 5.4-.5 8.1l0 16.2c0 22.1-17.9 40-40 40l-16 0c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1L416 512l-24 0c-22.1 0-40-17.9-40-40l0-24 0-64c0-17.7-14.3-32-32-32l-64 0c-17.7 0-32 14.3-32 32l0 64 0 24c0 22.1-17.9 40-40 40l-24 0-31.9 0c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2l-16 0c-22.1 0-40-17.9-40-40l0-112c0-.9 0-1.9 .1-2.8l0-69.7-32 0c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"/></svg></a></div>
+            <div class="navbar-logo"><a href="https://www.jmk.cz/" target="_blank"><img class="svg" src="../../foto/uvod foto/jmk_logo.svg" width="40"></a></div>
+            <div class="navbar-logo"><a href="https://www.sstebrno.cz" target="_blank"><img class="svg" src="../../foto/uvod foto/logo_currentColor.svg" width="40"></a></div>
+            <div class="navbar-logo"><a href="https://www.youtube.com/@VitekUniverse"target="_blank"><div class="navbar-image"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z"/></svg></a></div></div>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Ostatní  <i class="fa fa-angle-down"></i></a>
+                <div class="dropdown-content">
+                  <a href="../../html/ostatní/galerie.html" target="blank">Galerie</a>
+                  <a href="../../html/ostatní/mapa.html" target="blank">Mapa měst</a>
+                  <a href="../../html/ostatní/shit_post.html" target="blank">Tady neklikej</a>
+                </div>
+            <li class="jaroslav"><a href="../../html/ostatní/jaroslav.html" target="blank">Jaroslav Ráček  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM169.8 165.3c7.9-22.3 29.1-37.3 52.8-37.3l58.3 0c34.9 0 63.1 28.3 63.1 63.1c0 22.6-12.1 43.5-31.7 54.8L280 264.4c-.2 13-10.9 23.6-24 23.6c-13.3 0-24-10.7-24-24l0-13.5c0-8.6 4.6-16.5 12.1-20.8l44.3-25.4c4.7-2.7 7.6-7.7 7.6-13.1c0-8.4-6.8-15.1-15.1-15.1l-58.3 0c-3.4 0-6.4 2.1-7.5 5.3l-.4 1.2c-4.4 12.5-18.2 19-30.6 14.6s-19-18.2-14.6-30.6l.4-1.2zM224 352a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"/></svg></a></li>    
+
+          </ul>
+    </nav><!--zde končí navbar-->
+    <main> <!--toto je hlavní text-->
+        <div class="grid-container">
+            <div class="item1 image-container" id="item1">
+                    <!--zadej místo-->
+                    <h2>Nemocnice Břeclav</h2>
+                    <!--FOTKA MUSÍ BÝT 1500 X 843 /// MAXIMÁLNĚ PÁR PIXELŮ VEDLE aby se předešlo nesourodosti fotek-->
+                    <!--TATO FOTKA NEMŮŽE BÝT EDITOVÁNA V CSS, KVŮLI POLÍM S ODKAZY!!!!-->
+                    <!--dej sem co ta image map generation vyplivlo -->
+                    
+                    <!--aby se obr nehybal musí být dragamle false-->
+                    <img src="../../foto/breclav foto/nemocnice.png" draggable="false" usemap="#image-map">
+
+                    <!--title jsem vymazal-->
+                    <map name="image-map" class="image_map">
+                        <area target="_self" alt="" title="" href="breclav 100.html" coords="1,3,1498,843" shape="rect">
+                    <!--toto nefunguje protože tam toto je sekce map a map funguje jenom s area-->
+                    <!--    <a href="breclav 100.html" ><img src="../../foto/breclav foto/nemocnice.png" draggable="false"></a> -->
+                    </map>
+            </div>
+                <div class="item2" id="item2">
+                    <!--Dej sem nápovědu-->
+                    <div class="banner" id="banner" >
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--žárovička!--><path d="M297.2 248.9C311.6 228.3 320 203.2 320 176c0-70.7-57.3-128-128-128S64 105.3 64 176c0 27.2 8.4 52.3 22.8 72.9c3.7 5.3 8.1 11.3 12.8 17.7c0 0 0 0 0 0c12.9 17.7 28.3 38.9 39.8 59.8c10.4 19 15.7 38.8 18.3 57.5L109 384c-2.2-12-5.9-23.7-11.8-34.5c-9.9-18-22.2-34.9-34.5-51.8c0 0 0 0 0 0s0 0 0 0c-5.2-7.1-10.4-14.2-15.4-21.4C27.6 247.9 16 213.3 16 176C16 78.8 94.8 0 192 0s176 78.8 176 176c0 37.3-11.6 71.9-31.4 100.3c-5 7.2-10.2 14.3-15.4 21.4c0 0 0 0 0 0s0 0 0 0c-12.3 16.8-24.6 33.7-34.5 51.8c-5.9 10.8-9.6 22.5-11.8 34.5l-48.6 0c2.6-18.7 7.9-38.6 18.3-57.5c11.5-20.9 26.9-42.1 39.8-59.8c0 0 0 0 0 0s0 0 0 0s0 0 0 0c4.7-6.4 9-12.4 12.7-17.7zM192 128c-26.5 0-48 21.5-48 48c0 8.8-7.2 16-16 16s-16-7.2-16-16c0-44.2 35.8-80 80-80c8.8 0 16 7.2 16 16s-7.2 16-16 16zm0 384c-44.2 0-80-35.8-80-80l0-16 160 0 0 16c0 44.2-35.8 80-80 80z"/></svg><br>
+                        NÁPOVĚDA 
+                    </div>
+                    <p1>NÁPOVĚDA!!! Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambl</p1>
+                </div>  
+                
+                
+            <div class="item3" id="item3">
+                <!--dej sem znak-->
+                <img src="../../foto/breclav foto/Břeclav_znak.png"><br>
+                <p1>znak Břeclavi</p1>
+            </div>  
+            <div class="item4">
+                <!--dej sem info o místě-->
+                <p1>POIPIS INFO MĚSTA!!! Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p1>
+            </div>
+            <div class="item5">
+                <!--dej sem vlajku-->
+                <!--Martin Bucňák IT1B 14.05.2025 ///spolupracovali Ondřej Kocich, Tereza Dufková, Jakub Martínek-->
+                <img src="../../foto/breclav foto/Flag_of_Breclav.svg.png"><br>
+                <p1>vlajka Břeclavi</p1>
+                
+            </div>   
+        </div>
+    </main>
+
+    <script>
+        //toto vždy po načtení sjede k obrázku
+        document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById("item1").scrollIntoView({ behavior: "smooth" });
+        });
+
+        //nápověda aby byla skrytá
+        const image = document.getElementById('banner');
+
+        image.addEventListener('mouseenter', () => {
+            image.style.opacity = 0; // Hide the image when cursor enters
+        });
+
+        image.addEventListener('mouseleave', () => {
+            image.style.opacity = 1; // Show the image when cursor leaves
+        });
+
+    </script>
+</body>
+
+</html>
