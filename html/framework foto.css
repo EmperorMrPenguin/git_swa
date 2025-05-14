@@ -181,6 +181,7 @@ area {
     grid-row-end: 6;
     text-align: left !important;
     padding: 15px;
+    text-align: justify;
   }
   /*znak*/
   .item3{
