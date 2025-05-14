@@ -188,12 +188,20 @@ area {
     padding-top: 8px;
     padding-bottom: 8px;
   }
+
+  .item3 img {
+    padding-bottom: 15px;
+  }
   /*vlajka*/
   .item5{
     line-height: 0.8;
     padding-top: 8px;
     padding-bottom: 8px;
   }
+
+  .item5 img {
+    padding-bottom: 15px;
+  }  
 
 /*napověda aby byla schovana*/
 .banner {
