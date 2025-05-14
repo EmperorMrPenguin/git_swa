@@ -23,6 +23,7 @@
   background-image: url(foto/uvod\ foto/vinice_pozadí.png);
   background-size: cover;
   background-position-x: center;
+  background-color:#ffffff1e !important;  /*mění průsvitnost pozadí vinic*/
  }
  
  h1 {
@@ -83,7 +84,7 @@ nav {
  .navbar-logo {
    float: left;
    padding-left: 50px;
-   padding-top:10px;
+   padding-top:15px;
   }
 
  li {
@@ -95,7 +96,7 @@ nav {
    display: inline-block;
    color: white;
    text-align: center;
-   padding: 14px 16px;
+   padding: 14px 0px 14px 50px;
    text-decoration: none;
    
  }
@@ -127,7 +128,9 @@ nav {
    border-bottom-left-radius: 25px;
    border-bottom-right-radius: 25px;
    z-index: 1;
-   border: 10px solid #357a28;
+   border-left: 10px solid #357a28;
+   border-right: 10px solid #357a28;
+   border-bottom: 10px solid #357a28;
  }
  
  .dropdown-content a {

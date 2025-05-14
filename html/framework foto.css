@@ -27,6 +27,8 @@ nav {
    padding: 0;
    overflow: hidden;
    font-size: 35px;
+   border: 10px solid #00000068;
+   border-radius: 25px;
  }
 
  .navbar-logo {
@@ -44,7 +46,7 @@ nav {
    display: inline-block;
    color: white;
    text-align: center;
-   padding: 14px 16px;
+   padding: 8px 0px 8px 50px;
    text-decoration: none;
  }
  li.o_nas:hover a{
@@ -72,6 +74,9 @@ nav {
    min-width: 160px;
    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
    z-index: 1;
+   border-left: 10px solid #00000068;
+   border-right: 10px solid #00000068;
+   border-bottom: 10px solid #00000068;
  }
  
  .dropdown-content a {
@@ -192,10 +197,10 @@ area {
 /*napověda aby byla schovana*/
 .banner {
   position: absolute;
-  top: 1055px; /* Distance from the top */
+  top: 1064px; /* Distance from the top */
   left: 50%;
   transform: translateX(-50%); /* Centers the banner horizontally */
-  background-image: radial-gradient( yellow 1%, #367a28 90%);
+  background-image: radial-gradient( rgb(206, 206, 0) 1%, #367a28 90%);
   /*background-color: #51bd3c; /* Semi-transparent background */
   color: rgb(255, 255, 255);
 
