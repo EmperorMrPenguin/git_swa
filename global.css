@@ -7,12 +7,12 @@
  }
  body {
     font-family:Arial, Helvetica, sans-serif;
-    background-color:#ffffff;
+    background-color:#000000;
     color:#ffffff;
     font-size: 30px;
     text-align:center;;
     background-image:
-    linear-gradient(to bottom, rgb(0, 0, 0, 0.1) 15%, rgb(1, 1, 1) 20%),
+    linear-gradient(to bottom, rgb(0, 0, 0, 0) 15%, rgb(0, 0, 0) 20%),
     url(foto/uvod\ foto/JMK.jpg);
     background-repeat: no-repeat;
     background-attachment:scroll;
@@ -190,6 +190,7 @@ article.left {
   text-align:justify;
   margin-top:50px;    /*upravuje vertikální délku od talčítka začít hru*/
   padding-left:100px;
+  padding-bottom:230px;
 }
 
 article.right h2 {
@@ -207,6 +208,7 @@ article.right {
  margin-top:400px;
  margin-bottom:400px;
  padding-right:100px;
+ padding-bottom:300px;
 }
 /* Footer Styling */
 footer {
