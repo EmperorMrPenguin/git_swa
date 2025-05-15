@@ -42,7 +42,7 @@
  /*čudlík na začnutí hry*/
  .button {
    background-color: #357a28;
-   border-color: rgb(133, 255, 188);
+   border-color: #357a28;
    color: #ffffff;
    text-shadow: #000000 0px 0px 5px;
    padding: 32px 350px;
