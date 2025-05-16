@@ -27,23 +27,49 @@
     </nav><!--zde končí navbar-->
     <section>
         <h1>tady bude nazev</h1>
-        <div class ="galerie">
-            <div class ="obrazek">
-                <img src="../../foto/breclav foto/bratislava.jpg"></div>
-            <div class ="obrazek">
-                <img src="../../foto/breclav foto/kostel.png"></div>
-            <div class ="obrazek">
-                <img src="../../foto/breclav foto/croasant albert.png"></div>
-            <div class ="obrazek">
-                <img src="../../foto/breclav foto/cyklostezka.jpg"></div>
-            <div class ="obrazek">
-                <img src="../../foto/breclav foto/hokej.png"></div>
-            <div class ="obrazek">
-                <img src="../../foto/breclav foto/hrad.png"></div>
+        <div class ="gallery">
+            <img src="../../foto/breclav foto/bratislava.jpg" alt="croassant">
+            <img src="../../foto/breclav foto/kostel.png" alt="croassant">
+            <img src="../../foto/breclav foto/croasant albert.png" alt="croassant">
+            <img src="../../foto/breclav foto/croasant albert.png" alt="croassant">
+            <img src="../../foto/breclav foto/croasant albert.png" alt="croassant">
+            <img src="../../foto/breclav foto/croasant albert.png" alt="croassant">
+            <img src="../../foto/breclav foto/croasant albert.png" alt="croassant">
         </div>    
     </section>
-    
-    https://www.youtube.com/watch?v=phWxA89Dy94&t=11s
 
+    <!--NEMAZAT!!!! potřeba aby javascript fungoval-->
+    <div class="lightbox" id="lightbox">
+        <span class="close" id="closeBtn">&times;</span>
+        <img id="lightboxImg" src="../../foto/breclav foto/hrad.png" alt="">
+    </div>
+
+
+   <!--https://www.youtube.com/watch?v=phWxA89Dy94&t=11s --> 
+
+<script>
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightboxImg');
+    const closeBtn = document.getElementById('closeBtn');
+    const galleryImages = document.querySelectorAll('.gallery img');
+
+    galleryImages.forEach(img => {
+    img.addEventListener('click', () => {
+        lightbox.style.display = 'flex';
+        lightbox.classList.remove('zoomed');
+        lightboxImg.src = img.src;
+    });
+    });
+
+    lightboxImg.addEventListener('click', () => {
+    lightbox.classList.toggle('zoomed');
+    });
+
+    closeBtn.addEventListener('click', () => {
+    lightbox.style.display = 'none';
+    lightboxImg.src = '';
+    });
+
+</script>    
 </body>
 </html>

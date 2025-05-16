@@ -126,8 +126,58 @@ section {
 
 }
 
-  .galerie {
-    background-size: auto;
+  .gallery {
     display: flex;
     flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px;
+    justify-content: center;
+  }
+
+  .gallery img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+
+  .gallery img:hover {
+    transform: scale(1.03);
+  }
+
+  /* Lightbox */
+  .lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.9);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1000;
+  }
+
+  .lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    transition: transform 0.3s ease;
+    cursor: zoom-in;
+  }
+
+  .lightbox.zoomed img {
+    transform: scale(2);
+    cursor: zoom-out;
+  }
+
+  .close {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    font-size: 40px;
+    cursor: pointer;
+    color: white;
   }
