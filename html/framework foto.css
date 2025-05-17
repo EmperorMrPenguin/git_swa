@@ -192,6 +192,8 @@ area {
 
   .item3 img {
     padding-bottom: 15px;
+    max-width: 200px;
+    max-height: 200px;
   }
   /*vlajka*/
   .item5{
@@ -202,6 +204,8 @@ area {
 
   .item5 img {
     padding-bottom: 15px;
+    max-width: 200px;
+    max-height: 200px;
   }  
 
 /*napověda aby byla schovana*/
