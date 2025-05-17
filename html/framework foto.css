@@ -164,7 +164,8 @@ area {
     grid-column-end: 4;
     grid-row-start: 3;
     grid-row-end: 4;
-    padding: 50px;
+    height: 215px;
+    align-content: center;
   }
   
   /*žárovička*/
