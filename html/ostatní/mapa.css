@@ -7,16 +7,14 @@
  }
  body {
     font-family:Arial, Helvetica, sans-serif;
-    background-color:#000000;
+    /*background-color:#c8c8c8;*/
     color:#ffffff;
     font-size: 30px;
-    text-align:center;;
-    background-image:
-    linear-gradient(to bottom, rgb(0, 0, 0, 0) 15%, rgb(0, 0, 0) 20%),
-    url(foto/uvod\ foto/JMK.jpg);
-    background-repeat: no-repeat;
-    background-attachment:scroll;
-    background-size: contain; 
+    text-align:center;
+    background-image: url(../../foto/uvod\ foto/JMK.jpg);
+    background-size: cover;
+    background-position-x: center;
+
  }
 
  section.text {
@@ -31,13 +29,10 @@
     font-family: Impact, sans-serif;
     font-size: 150px;
     text-shadow: #ffffff 0px 0px 20px;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 0px;
+    padding-bottom: 0px;
  }
- h2 {
-    padding-top: 10px;
-    font-size: 50px;
- }
+
 
  /*čudlík na začnutí hry*/
  .button {
@@ -52,7 +47,6 @@
    margin-bottom: 150px;
    border-radius: 50px;
    transition-duration: 0.4s;
-   font-family: "Lexend Deca", sans-serif;
  }
 
  .button:hover {
@@ -174,72 +168,7 @@ main {
    padding: 20px;
 }
 
-/* Article Styling */
-article {
-  text-shadow: #000000 0px 0px 10px;
-  -webkit-flex: 3;
-  -ms-flex: 3;
-  flex: 3;
-  border: 10px solid #357a28;
-  border-radius: 25px;
-  font-family: "Lexend Deca", sans-serif;
-}  
-
-article.left h2 {
-   color: #ffffff;
-   text-align: left;
-}
-
-article.left img {
-  float: right;
-  margin-right:100px;
-  padding-left:300px;
-}
-
-article.left {
-  text-align:justify;
-  margin-top:50px;    /*upravuje vertikální délku od talčítka začít hru*/
-  padding-left:100px;
-  padding-bottom:230px;
-}
-
-article.right h2 {
-  color: #ffffff;
-  text-align: right;
-}
-
-article.right img {
-  float: left;
-  margin-left:100px;
-  padding-right:350px;
-}
-article.right {
- text-align: justify;
- margin-top:400px;
- margin-bottom:400px;
- padding-right:100px;
- padding-bottom:300px;
-}
-/* Footer Styling */
-footer {
-   background-color: #333;
-   color: white;
-   text-align: center;
-   padding: 10px;
-   position: relative;
-   bottom: 0;
-   width: 100%;
-}
-
-footer a {
-   color: white;
-   text-decoration: none;
-}
-
-/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
-@media (max-width: 600px) {
-  section {
-    -webkit-flex-direction: column;
-    flex-direction: column;
-  }
+img{
+    height: auto;
+    width: 1500px;
 }
