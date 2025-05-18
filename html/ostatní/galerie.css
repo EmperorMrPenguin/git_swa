@@ -47,6 +47,10 @@ nav {
    float: right;
    padding-inline: 75px;;
  }
+
+li.jaroslav:hover a {
+  color:#83ffbb
+ }
  
  li a, .dropbtn {
    display: inline-block;
