@@ -10,8 +10,8 @@ body {
     background-size: cover; 
  }
 h1 {
-    padding-top:250px;
-    padding-bottom: 250px;
+    padding-top:50px;
+    padding-bottom: 50px;
 }
 
 a {
@@ -124,4 +124,8 @@ nav {
  .svg:hover{
   filter: brightness(0) saturate(100%) invert(82%) sepia(24%) saturate(3480%) hue-rotate(272deg) brightness(97%) contrast(101%);
   cursor:pointer;
+ }
+
+ img {
+  border-radius: 25px;
  }
