@@ -1,0 +1,127 @@
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    color:#ffffff;
+    font-size: 40px;
+    text-align:center;;
+    background-image:
+    url(../../foto/ostatní/racek/background.jpg);
+    background-repeat: no-repeat;
+    background-attachment:scroll;
+    background-size: cover; 
+ }
+h1 {
+    padding-top:250px;
+    padding-bottom: 250px;
+}
+
+a {
+    color: #92fbff;
+}
+
+footer {
+    font-size:15px;
+}
+
+/*navbar*/
+nav {
+  top:0;
+  position: sticky;
+  background-color: #0000006c;
+  border-radius: 25px;
+}
+ 
+ ul {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+   font-size: 35px;
+   border: 10px solid #600276;
+   border-radius: 25px;
+ }
+
+ .navbar-logo {
+   float: left;
+   padding-left: 50px;
+   padding-top:15px;
+  }
+
+ li {
+   float: right;
+   padding-inline: 75px;;
+ }
+ 
+  li.jaroslav:hover a {
+  color:#f495ff;
+ }
+
+ li a, .dropbtn {
+   display: inline-block;
+   color: white;
+   text-align: center;
+   padding: 14px 0px 14px 50px;
+   text-decoration: none;
+   
+ }
+ li.o_nas:hover a{
+  color: #f495ff;
+ }
+
+ li:hover svg {
+  fill: #f495ff;
+ }
+
+ li a:hover, .dropdown:hover .dropbtn {
+   color: #f495ff;
+ }
+  li:hover a svg, .dropdown:hover .dropbtn svg {
+  fill: #f495ff;
+}
+ 
+ li.dropdown {
+   display:inline-block;
+ }
+ 
+ .dropdown-content {
+   display: none;
+   position: absolute;
+   min-width: 160px;
+   background-color: #0000006c;
+   box-shadow: 0px 8px 16px 0px rgba(0,0,0,1);
+   border-bottom-left-radius: 25px;
+   border-bottom-right-radius: 25px;
+   z-index: 1;
+   border-left: 10px solid #600276;
+   border-right: 10px solid #600276;
+   border-bottom: 10px solid #600276;
+ }
+ 
+ .dropdown-content a {
+   color: #ffffff;
+   padding: 12px 16px;
+   text-decoration: none;
+   display: block;
+   text-align: left;
+ }
+ 
+ .dropdown:hover .dropdown-content {
+   display: block;
+ }
+
+ svg {
+  width: 30px;
+  fill:#fff;
+ }
+ svg:hover {
+  fill:#f495ff;
+  cursor:pointer;
+ }
+
+ .svg{
+  width:40px;
+  filter: brightness(0) invert(1);
+ }
+ .svg:hover{
+  filter: brightness(0) saturate(100%) invert(82%) sepia(24%) saturate(3480%) hue-rotate(272deg) brightness(97%) contrast(101%);
+  cursor:pointer;
+ }
