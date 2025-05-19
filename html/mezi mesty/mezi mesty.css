@@ -1,0 +1,217 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #357a28;
+    
+  }
+
+
+/* Navbar Styling */
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  margin-top:10px;
+}
+ 
+ ul {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+   font-size: 35px;
+   border: 10px solid #00000068;
+   border-radius: 25px;
+   font-family: "Lexend Deca", sans-serif;
+ }
+
+ .navbar-logo {
+   float: left;
+   padding-left: 50px;
+   padding-top:10px;
+  }
+
+ li {
+   float: right;
+   padding-inline: 75px;;
+ }
+
+ li.jaroslav:hover a {
+  color:#83ffbb
+ }
+ 
+ li a, .dropbtn {
+   display: inline-block;
+   color: white;
+   text-align: center;
+   padding: 8px 0px 8px 50px;
+   text-decoration: none;
+ }
+ li.o_nas:hover a{
+  color: #83ffbb;
+ }
+
+ li:hover svg {
+  fill: #83ffbb;
+ }
+
+ li a:hover, .dropdown:hover .dropbtn {
+   color:#83ffbb;
+ }
+  li:hover a svg, .dropdown:hover .dropbtn svg {
+  fill: #83ffbb;
+}
+ 
+ li.dropdown {
+   display: inline-block;
+ }
+ 
+ .dropdown-content {
+   display: none;
+   position: absolute;
+   min-width: 160px;
+   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+   z-index: 1;
+   border-left: 10px solid #00000068;
+   border-right: 10px solid #00000068;
+   border-bottom: 10px solid #00000068;
+ }
+ 
+ .dropdown-content a {
+   color: #ffffff;
+   padding: 12px 16px;
+   text-decoration: none;
+   display: block;
+   text-align: left;
+ }
+ 
+ .dropdown:hover .dropdown-content {
+   display: block;
+   background-color: #357a28;
+   border-bottom-left-radius: 25px;
+   border-bottom-right-radius: 25px;
+ }
+
+ svg {
+  width: 30px;
+  fill:#fff;
+ }
+ svg:hover {
+  fill:#83ffbb;
+ }
+
+ .svg{
+  width:40px;
+  filter: brightness(0) invert(1);
+ }
+ .svg:hover{
+  filter: brightness(0) saturate(100%) invert(73%) sepia(33%) saturate(577%) hue-rotate(94deg) brightness(104%) contrast(95%);
+ }
+/* Main Content Styling */
+main {
+    margin-bottom: 20px;
+    width: 100%
+}
+
+area {
+    pointer-events: auto;
+}
+
+/* automaticky zalamuje text*/
+.break-lines {
+    white-space: pre-line;
+}
+
+/* grid layout*/
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0px; /*modré čáry mezi jednotlivými divy*/
+    background-color: #357a28;
+    padding: 0px; /*modré čáry postranách*/
+    box-sizing: border-box;
+  }
+  
+  /*barva hran a text*/
+  .grid-container > div {
+    background-color: #e7e7e7e7;
+    text-align: center;
+    font-size: 30px;
+    border: 10px solid #357a28;
+    border-radius: 25px;
+  }
+  
+/*hlavni obrazek*/
+  .item1 { 
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+
+  }
+
+  .item1 img {
+    border-radius: 20px;
+    border: 2px solid #00000071;
+    filter: drop-shadow(0px 0px 15px #00000080);
+  }
+  /*napoveda*/
+  .item2 {  
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    height: 215px;
+    align-content: center;
+  }
+  
+  /*žárovička*/
+  .item2 svg{
+    width: 50px;
+    padding-top: 50px;
+  }
+  
+  /*popis/info města*/
+  .item4 { 
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 6;
+    text-align: left !important;
+    padding: 15px;
+    text-align: justify;
+  }
+
+  /*vlajka*/
+  .item5{
+    line-height: 0.8;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+  .item5 img {
+    padding-bottom: 15px;
+    max-width: 200px;
+    max-height: 200px;
+  }  
+
+
+area {
+  cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="60" height="48" viewBox="0 0 24 24"><path fill="%23FFF" stroke="%23000" stroke-width="1.5" stroke-linejoin="round" d="M10 11V8.99c0-.88.59-1.64 1.44-1.86h.05A1.99 1.99 0 0 1 14 9.05V12v-2c0-.88.6-1.65 1.46-1.87h.05A1.98 1.98 0 0 1 18 10.06V13v-1.94a2 2 0 0 1 1.51-1.94h0A2 2 0 0 1 22 11.06V14c0 .6-.08 1.27-.21 1.97a7.96 7.96 0 0 1-7.55 6.48 54.98 54.98 0 0 1-4.48 0 7.96 7.96 0 0 1-7.55-6.48C2.08 15.27 2 14.59 2 14v-1.49c0-1.11.9-2.01 2.01-2.01h0a2 2 0 0 1 2.01 2.03l-.01.97v-10c0-1.1.9-2 2-2h0a2 2 0 0 1 2 2V11Z"></path></svg>') 20 10, auto;
+}
+
+/*
+area {
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'><path fill='%23fb00ff' d='M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 208c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-176c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 272c0 1.5 0 3.1 .1 4.6L67.6 283c-16-15.2-41.3-14.6-56.6 1.4s-14.6 41.3 1.4 56.6L124.8 448c43.1 41.1 100.4 64 160 64l19.2 0c97.2 0 176-78.8 176-176l0-208c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 112c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-176c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 176c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-208z'/></svg>") 15 15, auto;
+
+}
+*/
+  
