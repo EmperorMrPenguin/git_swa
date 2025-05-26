@@ -185,9 +185,8 @@ area {
     grid-column-end: 4;
     grid-row-start: 4;
     grid-row-end: 6;
-    text-align: left !important;
     padding: 15px;
-    text-align: justify;
+    text-align: center;
   }
 
   /*vlajka*/
