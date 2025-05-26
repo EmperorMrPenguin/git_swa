@@ -224,10 +224,11 @@ article.right {
 }
 /* Footer Styling */
 footer {
-   background-color: #333;
+   background-color: #000000;
    color: white;
    text-align: center;
-   padding: 10px;
+   font-size:20px;
+   padding-top: 100px;
    position: relative;
    bottom: 0;
    width: 100%;

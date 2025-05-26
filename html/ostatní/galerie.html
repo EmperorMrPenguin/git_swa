@@ -23,13 +23,23 @@
                   <a href="mapa.html" >Mapa měst</a>
                   <a href="shit_post.html" >Tady neklikej</a>
                 </div>
-            <li class="jaroslav"><a href="jaroslav.html" >Jaroslav Ráček  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM169.8 165.3c7.9-22.3 29.1-37.3 52.8-37.3l58.3 0c34.9 0 63.1 28.3 63.1 63.1c0 22.6-12.1 43.5-31.7 54.8L280 264.4c-.2 13-10.9 23.6-24 23.6c-13.3 0-24-10.7-24-24l0-13.5c0-8.6 4.6-16.5 12.1-20.8l44.3-25.4c4.7-2.7 7.6-7.7 7.6-13.1c0-8.4-6.8-15.1-15.1-15.1l-58.3 0c-3.4 0-6.4 2.1-7.5 5.3l-.4 1.2c-4.4 12.5-18.2 19-30.6 14.6s-19-18.2-14.6-30.6l.4-1.2zM224 352a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"/></svg></a></li>    
+            <li class="jaroslav"><a href="jaroslav.html" >Jaroslav Ráček  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM169.8 165.3c7.9-22.3 29.1-37.3 52.8-37.3l58.3 0c34.9 0 63.1 28.3 63.1 63.1c0 22.6-12.1 43.5-31.7 54.8L280 264.4c-.2 13-10.9 23.6-24 23.6c-13.3 0-24-10.7-24-24l0-13.5c0-8.6 4.6-16.5 12.1-20.8l44.3-25.4c4.7-2.7 7.6-7.7 7.6-13.1c0-8.4-6.8-15.1-15.1-15.1l-58.3 0c-3.4 0-6.4 2.1-7.5 5.3l-.4 1.2c-4.4 12.5-18.2 19-30.6 14.6s-19-18.2-14.6-30.6l.4-1.2zM224 352a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"/></svg></a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Seznam  <i class="fa fa-angle-down"></i></a>
+                <div class="dropdown-content">
+                  <a href="#breclav" >Břeclav</a>
+                  <a href="#mokra" >Mokrá-Horákov</a>
+                  <a href="#brno" >Brno</a>
+                  <a href="#kurim" >Kuřim</a>
+                  <a href="#slavkov" >Slavkov u Brna</a>
+                  <a href="#ostatni" >Ostatní</a>
+                </div>    
           </ul>
     </nav><!--zde končí navbar-->
 
 
     <section>
-        <h1>Břeclav</h1><!--název města-->
+        <h1 id="breclav">Břeclav</h1><!--název města-->
         <div class ="gallery">
             <div class="image-wrapper">
                 <img src="../../foto/breclav foto/bratislava.jpg" alt="bratislava"><!--změn src na fotku-->
@@ -109,7 +119,7 @@
                 <div class="overlay-text">T.G.M.</div>
             </div>
             <div class="image-wrapper">
-                <img src="../../foto/breclav foto/ufo.jpg" alt="ufo">
+                <img src="../../foto/breclav foto/ufo.png" alt="ufo">
                 <div class="overlay-text">Ufo</div>
             </div>
             <div class="image-wrapper">
@@ -128,7 +138,7 @@
     </section>
 
     <section>
-        <h1>Mokrá-Horákov</h1><!--název města-->
+        <h1 id="mokra">Mokrá-Horákov</h1><!--název města-->
         <div class ="gallery">
             <div class="image-wrapper">
                 <img src="../../foto/mokra foto/koupaliste_mokrak.png" alt="Koupaliště"><!--změn src na fotku-->
@@ -206,7 +216,7 @@
     </section>
 
     <section>
-        <h1>Brno</h1><!--název města-->
+        <h1 id="brno">Brno</h1><!--název města-->
         <div class ="gallery">
             <div class="image-wrapper">
                 <img src="../../foto/brno foto/brněnské drak.png" alt="Koupaliště"><!--změn src na fotku-->
@@ -280,7 +290,7 @@
     </section>
 
     <section>
-        <h1>Kuřim</h1><!--název města-->
+        <h1 id="kurim">Kuřim</h1><!--název města-->
         <div class ="gallery">
             <div class="image-wrapper">
                 <img src="../../foto/kurim foto/dítě_kuřim.jpg" alt="dítě"><!--změn src na fotku-->
@@ -291,11 +301,7 @@
                 <div class="overlay-text">Dědek</div><!--název místa mezery dělej takto: &nbsp-->
             </div>
             <div class="image-wrapper">
-                <img src="../../foto/kurim foto/Kaple.Kuřim.jpg" alt="kaple"><!--změn src na fotku-->
-                <div class="overlay-text">Kaple</div><!--název místa mezery dělej takto: &nbsp-->
-            </div>
-            <div class="image-wrapper">
-                <img src="../../foto/kurim foto/Knihova_Kuřim.jpg" alt="knihovna"><!--změn src na fotku-->
+                <img src="../../foto/kurim foto/Knihovna_Kuřim.jpg" alt="knihovna"><!--změn src na fotku-->
                 <div class="overlay-text">Knihovna</div><!--název místa mezery dělej takto: &nbsp-->
             </div>
             <div class="image-wrapper">
@@ -350,7 +356,7 @@
     </section>
 
     <section>
-        <h1>Slavkov</h1><!--název města-->
+        <h1 id="slavkov">Slavkov</h1><!--název města-->
         <div class ="gallery">
             <div class="image-wrapper">
                 <img src="../../foto/slavkov foto/markiplier or napoleon.jpg" alt="markiplier napoleon"><!--změn src na fotku-->
@@ -425,7 +431,7 @@
     </section>
 
     <section>
-        <h1>Fotky - Úvod</h1><!--název města-->
+        <h1 id="ostatni">Ostatní</h1><!--název města-->
         <div class ="gallery">
             <div class="image-wrapper">
                 <img src="../../foto/uvod foto/herdyn.jpg" alt="Herdyn"><!--změn src na fotku-->
@@ -434,11 +440,6 @@
             <div class="image-wrapper">
                 <img src="../../foto/uvod foto/JMK.jpg" alt="JMK"><!--změn src na fotku-->
                 <div class="overlay-text">JMK</div><!--název místa mezery dělej takto: &nbsp-->
-            </div>
-
-            <div class="image-wrapper">
-                <img src="../../foto/uvod foto/kopecek.png" alt="kopecek"><!--změn src na fotku-->
-                <div class="overlay-text">Kopeček</div><!--název místa mezery dělej takto: &nbsp-->
             </div>
             <div class="image-wrapper">
                 <img src="../../foto/uvod foto/nas_supr_dupr_tym.jpg" alt="nas tym"><!--změn src na fotku-->
@@ -451,6 +452,14 @@
             <div class="image-wrapper">
                 <img src="../../foto/uvod foto/SŠTE_škola.jpg" alt="SŠTE"><!--změn src na fotku-->
                 <div class="overlay-text">SŠTE</div><!--název místa mezery dělej takto: &nbsp-->
+            </div>
+            <div class="image-wrapper">
+                <img src="../../foto/lore foto/trida plagat.png" alt="Martincitopants"><!--změn src na fotku-->
+                <div class="overlay-text">Martin&nbsp"Cito"&nbspKalhoty&nbsp<br>na&nbspSŠTE?</div><!--název místa mezery dělej takto: &nbsp-->
+            </div>
+            <div class="image-wrapper">
+                <img src="../../foto/ostatní/niko.gif" alt="Niko"><!--změn src na fotku-->
+                <div class="overlay-text">OneShot&nbspNiko&nbsp:3&nbsp:P</div><!--název místa mezery dělej takto: &nbsp-->
             </div>
         </div>    
     </section>
