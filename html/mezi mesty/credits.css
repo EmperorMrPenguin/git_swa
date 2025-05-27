@@ -9,7 +9,7 @@ html {
    font-size: 30px;
    text-align:center;
    background-color: #000000;
-   background-image: linear-gradient(180deg,rgba(0, 0, 0, 1) 2%, rgba(0, 0, 0, 0.35) 10%, rgb(0, 0, 0) 23%),
+   background-image: linear-gradient(180deg,rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 7%, rgb(0, 0, 0, 1) 13%),
    url(../../foto/uvod\ foto/JMK.jpg);
    background-position: center;
    background-position-y: 900px;
@@ -27,6 +27,7 @@ html {
    text-align: center;
    display: inline-block;
    font-size: 35px;
+   margin-top: 50px;
    margin-bottom: 150px;
    border-radius: 50px;
    transition-duration: 0.4s;
@@ -59,8 +60,23 @@ html {
    padding-bottom: 200px;
  }
 
+ h3 {
+  font-style: bold;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-shadow:#357a28 0px 0px 15px;
+ }
+
  p {
-   padding-top:50px;
+   padding-top:200px;
+ }
+
+ p.top {
+  padding-top:50px;
+ }
+
+ p.thx {
+  padding-top:0px;
  }
 
  a {
@@ -102,4 +118,6 @@ svg{
 
 img{
    border-radius: 25px;
+   margin-bottom: 50px;
+   margin-top: 25px;
 }
