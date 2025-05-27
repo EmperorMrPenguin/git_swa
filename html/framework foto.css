@@ -219,7 +219,7 @@ area {
 /*napověda aby byla schovana*/
 .banner {
   position: absolute;
-  top: 1064px; /* Distance from the top */
+  top: 1061px; /* Distance from the top */
   left: 50%;
   transform: translateX(-50%); /* Centers the banner horizontally */
   background-image: radial-gradient( rgb(206, 206, 0) 1%, #367a28 90%);
